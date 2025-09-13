@@ -1,11 +1,15 @@
-# Gripper PCB Board
-<img src="images\soldering_setup.jpeg" style="width:300px; height:auto;">
-Using two motors, resistive position sensors, and ESP32 controller, the board interfaces with a robotic arm to grasp small objects.
-The PCB board design is from https://github.com/peng-zhihui/Dummy-Robot/tree/main/1.Hardware/HandModule.
+<div align="center">
+      <h2 align="center">Gripper PCB Board</h2>
+  Using two motors, resistive position sensors, and ESP32 controller, the board interfaces with a robotic arm to grasp small objects.
+The PCB board design is from https://github.com/peng-zhihui/Dummy-Robot/tree/main/1.Hardware/HandModule. <br><br>
+    <img src="images\soldering_setup.jpeg" style="width:600px; height:auto;">
+</div>
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
+    <ol>
     <li>
       <a href="#Mounting">Mounting PCB</a>
     </li>
@@ -18,6 +22,7 @@ The PCB board design is from https://github.com/peng-zhihui/Dummy-Robot/tree/mai
     <li>
       <a href="#Troubleshooting-process">Troubleshooting process</a>
     </li>
+        <ol>
 </details>
 
 ## Mounting PCB
@@ -35,14 +40,14 @@ I decided to only order the PCB board with the top layer components soldered and
 At the time, this seemed like a good idea since the bottom layer had much less components.
 In hindsight, it was definitely a challenging and unnecessary step even though I did learn a lot.
 
-### Tools I used
+#### Tools I used
 - Oscilloscope/Multimeter: measure resistance and voltage drop
 - Soldering iron: solder motor leads
 - Soldering paste & Heat gun (with variable fan speed): solder SMT
 - Microscope: examine if enough paste was applied to the pads before putting on components and the soldering results afterwards
 - Tweezers: apply paste and adjust placement of SMTs
 
-### General tips
+#### General tips
 - Put the soldering paste in the fridge
     - This made the paste smoother and easier to apply to the pads
 - Put fan speed on lowest setting so that it doesn't shift the placement of the SMT
@@ -55,8 +60,8 @@ even the smallest tip causes the surrounding solder and SMT to shift
 Troubleshooting was a very critical but time consuming process. My goal was to use a 20V power supply,
 but I first checked with 5V so that even if things short circuited the whole PCB wouldn't be ruined.
 
-### Top layer
-<img src="images\top_layer.png" style="width:300px; height:auto;">
+#### Top layer
+<img src="images\top_layer.png" style="width:600px; height:auto;">
 
-### Bottom layer
-<img src="images\bottom_layer.png" style="width:300px; height:auto;">
+#### Bottom layer
+<img src="images\bottom_layer.png" style="width:600px; height:auto;">
