@@ -20,12 +20,12 @@ typedef struct ADC_Channel {
 
 struct ADC_Channel channel[4]= {
   {ADC_CHANNEL_3,NULL,0,0},
-  {ADC_CHANNEL_6,NULL,0,0}
+  {ADC_CHANNEL_4,NULL,0,0}
 //  ADC_Channel(ADC_CHANNEL_5,NULL,0,0),
 //  ADC_Channel(ADC_CHANNEL_6,NULL,0,0),
 };
 #define EXAMPLE_ADC2_CHAN0          ADC_CHANNEL_3
-#define EXAMPLE_ADC2_CHAN1          ADC_CHANNEL_4
+#define EXAMPLE_ADC2_CHAN2          ADC_CHANNEL_4
 //#define EXAMPLE_ADC2_CHAN0          ADC_CHANNEL_5
 //#define EXAMPLE_ADC2_CHAN1          ADC_CHANNEL_6
 

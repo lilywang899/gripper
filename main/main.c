@@ -27,14 +27,14 @@ static const char* TAG = "main";
 void app_main(void)
 {
     ESP_LOGI(TAG, "setting up");
-    //adc_task_init();
+    adc_task_init();
     //controller_task_init();
     can_task_init();
     console_task_init();
     vTaskDelay(100);
 
     // Post the timer started event
-    //ESP_ERROR_CHECK(esp_event_post_to(adc_task, TIMER_EVENTS, TIMER_EVENT_STARTED, NULL, 0, portMAX_DELAY));
+    ESP_ERROR_CHECK(esp_event_post_to(adc_task, TIMER_EVENTS, TIMER_EVENT_STARTED, NULL, 0, portMAX_DELAY));
     // Post the timer started event
     //ESP_ERROR_CHECK(esp_event_post_to(controller_task, CONTROLLER_EVENTS, TASK_CONTROLLER_STARTED, NULL, 0, portMAX_DELAY));
     //ESP_ERROR_CHECK(esp_event_post_to(can_task, CAN_EVENTS, TASK_CAN_INIT, NULL, 0, portMAX_DELAY));
